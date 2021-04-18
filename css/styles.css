@@ -4,15 +4,118 @@ body {
     font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #757575;
     background-color: #E5E5E5;
+    width: 1600px;
+    display: block;
+    
+}
+
+.pages,
+.button-list,
+.portfolio-list,
+.services-list,
+.work-list,
+.team-list,
+.address-list {
+    list-style: none;
 }
 
 .main-header {
     background-color: #FFF;
+    min-height: 80px;
+}
+
+.container {
+    display: flex;
+}
+
+.navigation {
+    min-width: 50%;
+}
+
+.phone-mail {
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    min-width: 50%;
+}
+
+.mail-address {
+    margin: 0;
+    margin-right: 40px;
+    margin-left: auto;
+    padding: 32px 0;
+}
+
+.phone-number {
+    padding: 32px 227px 32px 0;
+}
+
+.pages {
+    text-align: center;
+    padding: 32px 0;
+    margin: 0;
+    margin-right: auto;
+}
+
+.pages-item-agency {
+    margin-right: 46px;
+}
+
+.pages-item-portfolio {
+    margin-right: 64px;
+}
+
+.solutions-header.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.button-order-service {
+    width: 200px;
+    height: 50px;
+    align-self: flex-end;
+    justify-self: center;
+    margin-right: auto;
+    margin-left: 700px;
+    margin-bottom: 200px;
+    padding: 10px 41px 10px 41px;
+    border-radius: 4px;
+}
+
+.solutions-header {
+    min-height: 600px;
+    padding-top: 200px;
+}
+
+.services {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.third-header-services,
+.description-services {
+    width: 270px;
+}
+
+.services-list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.services-list.container:first-child {
+    padding-left: 215px;
+}
+
+.services-list.container:last-child {
+    padding-right: 215px;
+}
+
+.services-list>li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .link {
     text-decoration: none;
-    
 }
 
 .logo-link {
@@ -22,6 +125,8 @@ body {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #212121;
+  padding: 24px 0 25px 215px;
+  margin-right: 93px;
 }
 
 
@@ -73,6 +178,7 @@ body {
 
 .footer-themes {
     color: rgba(255, 255, 255, 0.6);
+    width: 231px;
 }
 
 .footer-theme,
@@ -88,9 +194,6 @@ body {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.875;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
@@ -98,7 +201,6 @@ body {
 .button-order-service {
     font-weight: 500;
     line-height: 1.625;
-    align-items: normal;
     letter-spacing: 0.03em;
     cursor: pointer;
     background-color: #F5F4FA;
@@ -112,6 +214,14 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    height: 120px;
+    width: 696px;
+    flex-wrap: wrap;
+    margin-left: 452px;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    display:block;
 }
 
 .third-header-services {
@@ -120,6 +230,7 @@ body {
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    height: 16px;
 }
 
 .third-header-portfolio {
@@ -133,6 +244,7 @@ body {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
+    height: 75px;
 }
 
 .description-services-portfolio {
@@ -144,12 +256,37 @@ body {
 
 /*WORK*/
 
+.work {
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
 .second-header {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.work-list.container {
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+
+.team-list>li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-list>li:not(:last-child),
+.work-list>li:not(:last-child) {
+    margin-right: 30px;
 }
 
 /*END WORK*/
@@ -158,6 +295,16 @@ body {
 
 .team {
     background-color: #F5F4FA;
+}
+
+.second-header.space {
+    padding-top: 94px;
+}
+.team-list.container {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 94px;
 }
 
 .third-header-team {
@@ -176,11 +323,29 @@ body {
 
 /*FOOTER*/
 
+.footer {
+    height: 252px;
+    padding-top: 60px;
+}
+
 .address-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.174;
     letter-spacing: 0.03em;
+    padding-left: 215px;
+    height: 21px;
+}
+
+.address-list>li:not(:first-child) {
+    padding-top: 9px;
+}
+
+.address-list {
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 60px;
+    padding-left: 0;
 }
 
 /*END FOOTER*/
