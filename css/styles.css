@@ -53,6 +53,13 @@ body {
     border-bottom: 1px solid #ECECEC;
 }
 
+.pages-item-portfolio,
+.pages-item-agency-nd,
+.pages-item-contact,
+.logo-link {
+    color: #212121;
+}
+
 .navigation {
     min-width: auto;
     display: flex;
@@ -124,7 +131,6 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #212121;
   padding: 24px 0 25px;
   margin-right: 93px;
 }
