@@ -14,6 +14,8 @@ body {
     margin: 0;
 }
 
+
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -104,7 +106,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding: 10px 41px;
-    border-radius: 4px;
     display: flex;
 }
 
@@ -154,9 +155,14 @@ body {
 .mail-address:focus {
   color: var(--secondary-color)
 }
+
+.button-no-response:hover,
+.button-no-response:focus,
 .button-response,
+.button-order-service,
 .button-order-service:active,
-.button-order-service {
+.button-order-service:hover,
+.button-order-service:focus {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
@@ -180,13 +186,6 @@ body {
     width: 231px;
 }
 
-.footer-theme,
-.first-header,
-.button-response,
-.button-order-service {
-    color: #FFFFFF;
-}
-
 .button-response,
 .button-no-response,
 .button-order-service {
@@ -194,16 +193,20 @@ body {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
+    border-width: 0;
+    border-radius: 4px;
 }
 
-.button-no-response,
-.button-order-service {
+.button-no-response {
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.button-response,
+.button-no-response {
     font-weight: 500;
     line-height: 1.625;
     letter-spacing: 0.03em;
-    cursor: pointer;
-    background-color: #F5F4FA;
-    color: #212121;
 }
 
 .first-header {
@@ -271,6 +274,15 @@ body {
     margin-top: 0;
 }
 
+.button-no-response:focus,
+.button-no-response:hover,
+.footer-theme,
+.first-header,
+.button-response,
+.button-order-service {
+    color: #FFFFFF;
+}
+
 .team-list>li {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -300,8 +312,6 @@ body {
 .button-response,
 .button-no-response {
     height: 38px;
-    border-radius: 4px;
-    border-color: var(--main-color);
 }
 
 
