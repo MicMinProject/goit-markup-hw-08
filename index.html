@@ -28,10 +28,18 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="phone-mail">
-                    <a class="mail-address link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="phone-number link" href="tel:+48111111111">+48 111 111 111</a>
-                </div>
+                <ul class="phone-mail">
+                    <li>
+                        <a class="mail-address link" href="mailto:info@devstudio.com"><svg class="envelope" width=16 height=12>
+                            <use href="./images/sprite/icons.svg#icon-envelope"></use>
+                        </svg>  info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="phone-number link" href="tel:+48111111111"><svg class="smartphone" width=16 height=12>
+                            <use href="./images/sprite/icons.svg#icon-smartphone"></use>
+                        </svg> +48 111 111 111</a>
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
@@ -42,22 +50,34 @@
                 </div>
                 <div class="services section container">
                     <ul class="services-list">
-                         <li>
-                             <h3 class="third-header-services">LOREM IPSUM</h3>
-                             <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
-                         </li>
-                          <li>
-                               <h3 class="third-header-services">LOREM IPSUM</h3>
-                               <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
-                        </li>
                         <li>
+                            <svg class="services-icons" width="270" height="120">
+                                <use href="./images/sprite/icons.svg#icon-antenna"></use>
+                            </svg>
                             <h3 class="third-header-services">LOREM IPSUM</h3>
                             <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
                         </li>
-                         <li>
-                             <h3 class="third-header-services">LOREM IPSUM</h3>
-                             <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
-                         </li>
+                        <li>
+                            <svg class="services-icons" width="270" height="120">
+                                <use href="./images/sprite/icons.svg#icon-clock"></use>
+                            </svg>
+                            <h3 class="third-header-services">LOREM IPSUM</h3>
+                            <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
+                        </li>
+                        <li>
+                            <svg class="services-icons" width="270" height="120">
+                                <use href="./images/sprite/icons.svg#icon-diagram"></use>
+                            </svg>
+                            <h3 class="third-header-services">LOREM IPSUM</h3>
+                            <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
+                        </li>
+                        <li>
+                            <svg class="services-icons" width="270" height="120">
+                                <use href="./images/sprite/icons.svg#icon-astronaut"></use>
+                            </svg>
+                            <h3 class="third-header-services">LOREM IPSUM</h3>
+                            <p class="description-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
+                        </li>
                      </ul>
                 </div>
             </section>
@@ -77,14 +97,36 @@
                     </ul>
                 </div>
             </section>
-            <section class="team">
-                <div class="section container">
+            <section class="team container">
+                <div class="section">
                     <h2 class="second-header">Nasz zespół</h2>
                     <ul class="team-list">
                         <li>
                             <img src="./images/team/img4.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
                             <h3 class="third-header-team">John Doe</h3>
                             <p class="description-team">Product Designer</p>
+                            <ul class="social-icons-list">
+                                <li class="social-icons-item">
+                                    <a class="social-link link" href="#"><svg class="social-icons" width="20" height="20">
+                                        <use href="./images/sprite/icons.svg#icon-instagram"></use>
+                                    </svg></a>
+                                </li>
+                                <li class="social-icons-item">
+                                    <a class="social-link link" href="#"><svg class="social-icons" width="20" height="20">
+                                        <use href="./images/sprite/icons.svg#icon-twitter"></use>
+                                    </svg></a>
+                                </li>
+                                <li class="social-icons-item">
+                                    <a class="social-link link" href="#"><svg class="social-icons" width="20" height="20">
+                                        <use href="./images/sprite/icons.svg#icon-facebook"></use>
+                                    </svg></a>
+                                </li>
+                                <li class="social-icons-item">
+                                    <a class="social-link link" href="#"><svg class="social-icons" width="20" height="20">
+                                        <use href="./images/sprite/icons.svg#icon-linkedin"></use>
+                                    </svg></a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <img src="./images/team/img5.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
@@ -104,18 +146,53 @@
                     </ul>
                 </div>
             </section>
-        </main>
-        <footer class="footer">
-            <div class="container"> 
-                <a class="logo-link link footer-theme" href="index.html"><span class="logo-link-web">Web</span>Studio</a>
-                <address>
-                    <ul class="address-list">
-                        <li><a class="address-link link footer-theme" href="#">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                        <li><a class="address-link link footer-themes" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="address-link link footer-themes" href="tel:+48111111111">+48 111 111 111</a></li>
+            <section class="clients container">
+                <div class="section">
+                    <h2 class="second-header">Nasi klienci</h2>
+                    <ul class="clients-list">
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-yago"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-company"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-company-nd"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-foster"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-brand"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="clients-icons" width="170" height="92">
+                                <use href="./images/sprite/icons.svg#icon-tag"></use>
+                            </svg>
+                        </li>
                     </ul>
-                </address>
-            </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <a class="logo-link link footer-theme" href="index.html"><span class="logo-link-web">Web</span>Studio</a>
+            <address>
+                <ul class="address-list">
+                    <li><a class="address-link link footer-theme" href="#">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                    <li><a class="address-link link footer-themes" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="address-link link footer-themes" href="tel:+48111111111">+48 111 111 111</a></li>
+                </ul>
+            </address> 
         </footer>
     </body>
 </html>
