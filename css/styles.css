@@ -10,8 +10,8 @@ body {
     color: var(--main-color-font);
     background-color: var(--main-color);
     display: block;
-    width: 1200px;
-    margin: 0;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -27,18 +27,22 @@ body {
     padding-right: 15px;
     max-width: 1200px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 /*HEADER*/
 
+.social-icons-list,
 .pages,
 .button-list,
 .portfolio-list,
 .services-list,
 .work-list,
 .team-list,
-.address-list {
+.address-list,
+.clients-list {
     list-style: none;
     display: flex;
 }
@@ -66,6 +70,7 @@ body {
 }
 
 .phone-mail {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -144,6 +149,7 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color-font);
+  fill: var(--main-color-font);
 }
 
 .logo-link-web,
@@ -159,7 +165,8 @@ body {
 .phone-number:focus,
 .mail-address:hover,
 .mail-address:focus {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 .button-no-response:hover,
@@ -228,6 +235,53 @@ body {
     padding: 0 252px;
 }
 
+.services-icons,
+.clients-ikons {
+    border-radius: 4px;
+}
+
+.services-icons {
+    padding: 20px 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;  
+}
+
+.social-icons-item>a {
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-icons {
+    fill: #AFB1B8;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--secondary-color);
+    fill: #FFF;
+}
+
+.social-icons-list {
+    padding: 0 32px 30px;
+    justify-content: space-between;
+}
+
+.clients-icons {
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
 .third-header-services {
     font-weight: bold;
     font-size: 14px;
@@ -235,6 +289,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     height: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .third-header-portfolio,
@@ -258,6 +314,7 @@ body {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 
 .description-services-portfolio {
@@ -335,6 +392,7 @@ body {
     margin-bottom: 30px;
 }
 
+.clients-list,
 .services-list,
 .team-list,
 .work-list {
@@ -343,8 +401,7 @@ body {
     margin: 0;
 }
 
-.work,
-.team {
+.work {
     padding-bottom: 94px;
 }
 
@@ -366,6 +423,10 @@ body {
     line-height: 1.188;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.description-team {
+    margin-bottom: 16px;
 }
 
 /*END TEAM*/
