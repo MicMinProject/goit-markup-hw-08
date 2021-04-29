@@ -34,6 +34,7 @@ body {
 
 /*HEADER*/
 
+.phone-mail,
 .social-icons-list,
 .pages,
 .button-list,
@@ -70,23 +71,42 @@ body {
 }
 
 .phone-mail {
-    list-style: none;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
-    min-width: auto;
+}
+
+.phone-mail>li {
+    height: 16px;
 }
 
 .mail-address {
+    display: flex;
+    height: 16px;
     margin: 0;
     margin-right: 40px;
     margin-left: auto;
-    padding: 32px 0;
+    padding: 0;
+}
+
+.envelope,
+.smartphone {
+    height: 16px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.smartphone-size {
+    width: 10px;
+    height: 16px;
 }
 
 .phone-number {
-    padding: 32px 27px 32px 0;
+    display: flex;
+    text-align: center;
+    padding: 0 27px 0 0;
 }
 
 .pages {
@@ -106,7 +126,14 @@ body {
     margin-right: 64px;
 }
 
+.footer,
+.solutions-header {
+    background-color: #2F303A;
+}
+
 .solutions-header{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url('/images/background/header.jpg');
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -180,19 +207,9 @@ body {
     cursor: pointer;
 }
 
-.phone-number,
-.mail-address {
-  color: #757575;
-}
-
 /*END HEADER*/
 
 /*SOLUTIONS*/
-
-.footer,
-.solutions-header {
-    background-color: #2F303A;;
-}
 
 .footer-themes {
     color: rgba(255, 255, 255, 0.6);
@@ -222,6 +239,11 @@ body {
     letter-spacing: 0.03em;
 }
 
+.button-response:hover,:focus,
+.button-no-response:hover,:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .first-header {
     font-weight: 900;
     font-size: 44px;
@@ -236,7 +258,7 @@ body {
 }
 
 .services-icons,
-.clients-ikons {
+.clients-icons {
     border-radius: 4px;
 }
 
@@ -256,12 +278,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    fill: #AFB1B8;
 }
 
 .social-icons {
-    fill: #AFB1B8;
+    padding: 12px;
 }
 
 .social-link:hover,
@@ -275,11 +296,19 @@ body {
     justify-content: space-between;
 }
 
-.clients-icons {
-    padding: 16px 32px;
-    background-color: transparent;
+.clients-link {
     border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: block;
+    width: 170px;
+    height: 98px;
     fill: #AFB1B8;
+}
+
+.clients-link:hover,
+:focus {
+    fill: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .third-header-services {
@@ -377,7 +406,9 @@ body {
     height: 38px;
 }
 
-
+.portfolio-list>li:hover,:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-list {
     justify-content: space-between;
@@ -434,7 +465,35 @@ body {
 /*FOOTER*/
 
 .footer {
+    display: flex;
     padding-top: 60px;
+    justify-content: flex-start;
+}
+
+.right-side>ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-header {
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.dark-bg {
+    background-color:  rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.left-side {
+    margin-right: 38px;
 }
 
 .address-link {
