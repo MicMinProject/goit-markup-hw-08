@@ -10,7 +10,7 @@ body {
     color: var(--main-color-font);
     background-color: var(--main-color);
     display: block;
-    width: 1600px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -134,8 +134,14 @@ body {
 
 .solutions-header{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+<<<<<<< HEAD
      url(../images/background/header.jpg);
     padding: 200px 452px;
+=======
+     url('./images/background/header.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+>>>>>>> 17f8aeb8f090acaa17d547af6b5318626d6c097f
 }
 
 .button-order-service {
