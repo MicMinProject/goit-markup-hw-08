@@ -1,7 +1,7 @@
 :root {
     --main-font: 'Roboto', sans-serif;
     --main-color-font: #757575;
-    --main-color: #E5E5E5;
+    --main-color: #FFF;
     --secondary-color: #2196f3;  
 }
 
@@ -13,8 +13,6 @@ body {
     width: 1600px;
     margin: 0 auto;
 }
-
-
 
 .section {
     padding-top: 94px;
@@ -54,8 +52,11 @@ body {
 }
 
 .main-header {
-    display: flex;
     border-bottom: 1px solid #ECECEC;
+}
+
+.composition {
+    display: flex;
 }
 
 .pages-item-portfolio,
@@ -133,9 +134,8 @@ body {
 
 .solutions-header{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-     url('/images/background/header.jpg');
-    padding-top: 200px;
-    padding-bottom: 200px;
+     url(../images/background/header.jpg);
+    padding: 200px 452px;
 }
 
 .button-order-service {
@@ -250,11 +250,10 @@ body {
     line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    min-width: 696px;
+    max-width: 696px;
     flex-wrap: wrap;
     text-align: center;
     margin: 0 0 30px;
-    padding: 0 252px;
 }
 
 .services-icons,
@@ -325,8 +324,9 @@ body {
 .third-header-portfolio,
 .description-services-portfolio {
     padding-left: 24px;
+    padding-right: 24px;
     margin: 0;
-    width: 322px;
+    min-width: 322px;
 }
 
 .third-header-portfolio {
@@ -335,8 +335,8 @@ body {
     letter-spacing: 0.06em;
     text-transform: none;
     height: 36px;
-    padding-top: 20px;
-    margin-bottom: 4px;
+    margin: 20px 24px 4px;
+    padding: 0;
 }
 
 .description-services {
@@ -350,6 +350,7 @@ body {
     font-size: 16px;
     line-height: 1.875;
     padding-bottom: 20px;
+    height: 30px;
 }
 
 /*END SOLUTIONS*/
@@ -406,7 +407,7 @@ body {
     height: 38px;
 }
 
-.portfolio-list>li:hover,:focus {
+.portfolio-list>li:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -416,7 +417,8 @@ body {
 }
 
 .portfolio-list>li {
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+    height: 404px;
 }
 
 .portfolio-list>li:not(:nth-last-child(-n+3)) {
@@ -465,8 +467,12 @@ body {
 /*FOOTER*/
 
 .footer {
-    display: flex;
     padding-top: 60px;
+    justify-content: flex-start;
+}
+
+.composition-footer {
+    display: flex;
     justify-content: flex-start;
 }
 
@@ -514,5 +520,6 @@ body {
     padding-bottom: 60px;
     padding-left: 0;
 }
+
 
 /*END FOOTER*/
