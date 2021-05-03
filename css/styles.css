@@ -134,7 +134,7 @@ body {
 
 .solutions-header{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-     url(/images/background/header.jpg);
+     url(./images/background/header.jpg);
     padding: 200px 452px;
 }
 
