@@ -18,10 +18,10 @@
                 <a class="logo-link link" href="index.html"><span class="logo-link-web">Web</span>Studio</a>
                 <ul class="pages">
                     <li class="pages-item">
-                        <a class="pages-item-agency-nd link" href="index.html">Agencja</a>
+                        <a class="pages-item-agency link" href="index.html">Agencja</a>
                     </li>
                     <li class="pages-item">
-                        <a class="pages-item-portfolio-nd link" href="portfolio.html">Portfolio</a>
+                        <a class="pages-item-portfolio link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="pages-item">
                         <a class="pages-item-contact link" href="#">Kontakt</a>
@@ -49,7 +49,7 @@
         <section class="solutions">
             <div class="solutions-header">
                 <h1 class="first-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-                <button class="button-order-service" type="button">Zamów usługę</button>
+                <button class="button-order-service" type="button" data-modal-open>Zamów usługę</button>
             </div>
             <div class="services section container">
                 <ul class="services-list">
@@ -88,14 +88,23 @@
             <div class="section container">
                 <h2 class="second-header">Czym się zajmujemy</h2>
                 <ul class="work-list">
-                    <li>
+                    <li class="work-images">
                         <img src="./images/work/img1.jpg" alt="Praca przy komputerze oraz tablecie" width="370" height="294">
+                        <div class="work-images-subtitles">
+                            <h3 class="work-images-subtitles-header">Aplikacje komputerowe</h3>
+                        </div>
                     </li>
-                    <li>
+                    <li class="work-images">
                         <img src="./images/work/img2.jpg" alt="Praca przy komputerze oraz smartfonie" width="370" height="294">
+                        <div class="work-images-subtitles">
+                            <h3 class="work-images-subtitles-header">Aplikacje mobilne</h3>
+                        </div>
                     </li>
-                    <li>
+                    <li class="work-images">
                         <img src="./images/work/img3.jpg" alt="Wybór palety kolorów na ekranie tabletu" width="370" height="294">
+                        <div class="work-images-subtitles">
+                            <h3 class="work-images-subtitles-header">Rozwiązania graficzne</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -293,5 +302,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="cls-button" type="button" data-modal-close>
+                <svg class="cls-icon" width="17" height="17">
+                    <use href="./images/sprite/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
