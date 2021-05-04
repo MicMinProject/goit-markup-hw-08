@@ -473,27 +473,30 @@ body {
 }
 
 .portfolio-view {
-    width: 740px;
-    height: 404px;
-    left: -370px;
+    overflow: hidden;
+    width: 370px;
+    height: 788px;
+    top: 0;
     position: absolute;
     background-color: transparent;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-animation-description {
+    z-index: 0;
     padding: 49px 45px 49px 24px;
     width: 370px;
     height: 294px;
     position: absolute;
-    top:0;
-    left:0;
+    top: 294px;
     background-color:rgba(33, 150, 243, 0.9);
 }
 
 .portfolio-view:hover {
-    left:0;
-    
+    top: -294px;
+}
+.portfolio-subtitles {
+    position: relative;
 }
 
 .portfolio-image-description {
