@@ -149,12 +149,11 @@ img {
 
 .button-order-service {
     width: 200px;
-    align-self: flex-end;
-    justify-self: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px 41px;
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
 .third-header-services,
@@ -594,7 +593,7 @@ img {
     justify-content: flex-start;
 }
 
-.right-side>ul {
+.center-side>ul {
     padding-left: 0;
     margin: 0;
 }
@@ -664,6 +663,7 @@ img {
     width: 528px;
     min-height: 581px;
     background-color: #fff;
+    
 }
 
 .is-hidden {
@@ -697,3 +697,42 @@ img {
 }
 
 /*END MODAL*/
+
+/*FORM*/
+
+form[name="sign-up-newsletter"]>label {
+    display: flex;
+}
+
+input[name="email"] {
+    width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.icon-send {
+    fill: #FFF;
+}
+
+button[type="submit"] {
+    padding-left: 42px;
+    padding-right: 28px;
+    justify-content: space-between;
+}
+
+
+form[name="contact-data-form"]>label,
+.modal-header-form {
+    display: block;
+    width: 448px;
+}
+
+/*END FORM*/
