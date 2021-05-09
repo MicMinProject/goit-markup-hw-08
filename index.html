@@ -275,7 +275,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="right-side">
+            <div class="center-side">
                 <h3 class="footer-header">Dołącz do nas</h3>
                 <ul class="social-icons-list">
                     <li class="social-icons-item">
@@ -300,6 +300,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="right-side">
+                <h3 class="footer-header">Zapisz się do newslettera</h3>
+                <form name="sign-up-newsletter" autocomplete="off">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <button class="button-order-service" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
+                            <use href="./images/sprite/icons.svg#icon-send"></use>
+                        </svg></button>
+                    </label>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -310,6 +321,30 @@
                     <use href="./images/sprite/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <h3 class="modal-header-form">Zostaw swoje dane w formularzu poniżej</h3>
+            <form name="contact-data-form">
+                <label>
+                    Imie
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Telefon
+                    <input type="tel" name="tel" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Komentarz
+                    <textarea name="comment" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" required>
+                    Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.
+                </label>
+                <button class="button-order-service" type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
 
