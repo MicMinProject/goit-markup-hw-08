@@ -302,7 +302,7 @@
             </div>
             <div class="right-side">
                 <h3 class="footer-header">Zapisz się do newslettera</h3>
-                <form name="sign-up-newsletter" autocomplete="off">
+                <form name="sign-up-newsletter" autocomplete="off" method="POST">
                     <label>
                         <input type="email" name="email" placeholder="E-mail">
                         <button class="button-order-service" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
@@ -322,26 +322,26 @@
                 </svg>
             </button>
             <h3 class="modal-header-form">Zostaw swoje dane w formularzu poniżej</h3>
-            <form name="contact-data-form">
-                <label>
+            <form name="contact-data-form" method="POST" autocomplete="off">
+                <label class="contact-data-form-label">
                     Imie
                     <input type="text" name="name" required>
                 </label>
-                <label>
+                <label class="contact-data-form-label">
                     Telefon
                     <input type="tel" name="tel" required>
                 </label>
-                <label>
+                <label class="contact-data-form-label">
                     Email
                     <input type="email" name="email" required>
                 </label>
-                <label>
+                <label class="contact-data-form-label">
                     Komentarz
-                    <textarea name="comment" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                    <textarea name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
                 </label>
-                <label>
+                <label class="in-row contact-data-form-label">
                     <input type="checkbox" name="checkbox" required>
-                    Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.
+                    Oświadczam iż akceptuję<a href="#">Regulamin</a>i<a href="#">Politykę Prywatności.</a>
                 </label>
                 <button class="button-order-service" type="submit">Wyślij</button>
             </form>
