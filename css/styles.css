@@ -765,6 +765,7 @@ form[name="sign-up-newsletter"]>label {
     font-size: 14px;
     line-height: 1.714;
     justify-content: center;
+    height: 24px;
 }
 
 .contact-data-form-label {
@@ -817,12 +818,39 @@ form[name="sign-up-newsletter"]>label {
     border-color: rgba(255,70,70);
 }
 
-.in-row>.input {
+.input-checkbox {
     border-radius: 2px;
     width: 16px;
     height: 15px;
     margin: 0;
     margin-right: 7px;
+}
+
+.input-checkbox:checked {
+    visibility: hidden;
+}
+
+.disclaimer {
+    position: relative;
+    margin: 0;
+}
+
+.disclaimer::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    position: absolute;
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -23px;
+}
+
+.input-checkbox:checked +.disclaimer::before {
+    border:none;
+    background-color: var(--secondary-color);
+    background-image: url(../images/sprite/check.svg#icon-check);
 }
 
 .policy {
