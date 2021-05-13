@@ -179,7 +179,6 @@ img {
 
 .phone-number,
 .mail-address {
-  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -705,7 +704,7 @@ form[name="sign-up-newsletter"]>label {
     display: flex;
 }
 
-input[name="email"] {
+.newsletter-email {
     width: 358px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
@@ -734,13 +733,13 @@ input[name="email"] {
     margin-bottom: 12px;
 }
 
-button[type="submit"] {
+.newsletter-button {
     padding-left: 42px;
     padding-right: 28px;
     justify-content: space-between;
 }
 
-form[name="contact-data-form"]>button[type="submit"] {
+.modal-button {
     justify-content: center;
     padding: 0;
     margin-top: 30px;
@@ -748,7 +747,7 @@ form[name="contact-data-form"]>button[type="submit"] {
 }
 
 
-form[name="contact-data-form"]>label {
+.contact-data-form-label {
     display: flex;
     flex-direction: column;
     width: 448px;
@@ -759,13 +758,20 @@ form[name="contact-data-form"]>label {
     margin-bottom: 10px;
 }
 
-form[name="contact-data-form"]>.in-row {
+.in-row {
     flex-direction: row;
     align-items: center;
     margin: 0;
+    font-size: 14px;
+    line-height: 1.714;
+    justify-content: center;
 }
 
-.contact-data-form-label>input {
+.contact-data-form-label {
+    position: relative;
+}
+
+.input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
@@ -773,36 +779,45 @@ form[name="contact-data-form"]>.in-row {
     height: 40px;
     margin-top: 4px;
     color: #212121;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-data-form-label>textarea {
+.textarea {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 14px 16px;
     height: 120px;
     margin-top: 4px;
-
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-data-form-label>input:focus {
-    border-color: var(--secondary-color);
+.modal-icons-focus {
+   width: 448px;
+   height: 40px; 
+}
+
+.input:focus +.icon-name,
+.input:focus +.icon-mail,
+.input:focus +.icon-tel{
     fill: var(--secondary-color);
-    outline: none;
 }
 
-.contact-data-form-label>textarea:focus {
+.textarea:focus,
+.input:focus {
     border-color: var(--secondary-color);
-    fill: var(--secondary-color);
     outline: none;
+    box-shadow: none;
 }
 
-.in-row.contact-data-form-label {
-    font-size: 14px;
-    line-height: 1.714;
-    justify-content: center;
+.input:valid {
+    border-color: rgba(70,255,70);
 }
 
-.in-row>input {
+.input:invalid:not(:placeholder-shown) {
+    border-color: rgba(255,70,70);
+}
+
+.in-row>.input {
     border-radius: 2px;
     width: 16px;
     height: 15px;
@@ -810,8 +825,30 @@ form[name="contact-data-form"]>.in-row {
     margin-right: 7px;
 }
 
-.in-row>a {
+.policy {
     margin: 0 3px;
+}
+
+.icon-name,
+.icon-tel,
+.icon-mail {
+    position: absolute;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.icon-name {
+    top: 54.7%;
+    left:3.3%;
+}
+
+.icon-tel {
+    top: 54%;
+    left: 3.2%;
+}
+
+.icon-mail {
+    top: 54.7%;
+    left: 2.8%;
 }
 
 /*END FORM*/
