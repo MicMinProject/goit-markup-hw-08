@@ -304,8 +304,8 @@
                 <h3 class="footer-header">Zapisz się do newslettera</h3>
                 <form name="sign-up-newsletter" autocomplete="off" method="POST">
                     <label>
-                        <input type="email" name="email" placeholder="E-mail">
-                        <button class="button-order-service" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
+                        <input class="newsletter-email" type="email" name="email" placeholder="E-mail">
+                        <button class="button-order-service newsletter-button" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
                             <use href="./images/sprite/icons.svg#icon-send"></use>
                         </svg></button>
                     </label>
@@ -325,25 +325,34 @@
             <form name="contact-data-form" method="POST" autocomplete="off">
                 <label class="contact-data-form-label">
                     Imie
-                    <input type="text" name="name" required>
+                        <input class="input" pattern="\b[A-Z]\w+\s[A-Z]\w+\b" name="name" placeholder=" " required>
+                        <svg class="icon-name" width="12" height="12">
+                            <use href="./images/sprite/icons.svg#icon-name"></use>
+                        </svg>
                 </label>
                 <label class="contact-data-form-label">
                     Telefon
-                    <input type="tel" name="tel" required>
+                    <input class="input" type="tel" name="tel" minlength="9" maxlength="12" placeholder=" " required>
+                    <svg class="icon-tel" width="13" height="13">
+                        <use href="./images/sprite/icons.svg#icon-tel"></use>
+                    </svg>
                 </label>
                 <label class="contact-data-form-label">
                     Email
-                    <input type="email" name="email" required>
+                    <input class="input" type="email" name="email" placeholder=" " required>
+                    <svg class="icon-mail" width="15" height="12">
+                        <use href="./images/sprite/icons.svg#icon-mail"></use>
+                    </svg>
                 </label>
                 <label class="contact-data-form-label">
                     Komentarz
-                    <textarea name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
+                    <textarea class="textarea" name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
                 </label>
                 <label class="in-row contact-data-form-label">
-                    <input type="checkbox" name="checkbox" required>
-                    Oświadczam iż akceptuję<a href="#">Regulamin</a>i<a href="#">Politykę Prywatności.</a>
+                    <input class="input" type="checkbox" name="checkbox" required>
+                    Oświadczam iż akceptuję<a class="policy" href="#">Regulamin</a>i<a class="policy" href="#">Politykę Prywatności.</a>
                 </label>
-                <button class="button-order-service" type="submit">Wyślij</button>
+                <button class="button-order-service modal-button" type="submit">Wyślij</button>
             </form>
         </div>
     </div>
