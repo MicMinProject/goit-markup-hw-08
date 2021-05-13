@@ -256,10 +256,11 @@
             </div>
             <div class="right-side">
                 <h3 class="footer-header">Zapisz się do newslettera</h3>
-                <form name="sign-up-newsletter" autocomplete="off">
+                <form name="sign-up-newsletter" autocomplete="off" method="POST">
                     <label>
-                        <input type="email" name="email" placeholder="E-mail">
-                        <button class="button-order-service" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
+                        <input class="newsletter-email" type="email" name="email" placeholder="E-mail">
+                        <button class="button-order-service newsletter-button" type="submit">Zapisz się<svg
+                                class="icon-send" width="24" height="24">
                                 <use href="./images/sprite/icons.svg#icon-send"></use>
                             </svg></button>
                     </label>
