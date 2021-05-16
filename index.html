@@ -30,13 +30,13 @@
             </nav>
             <div class="phone-mail">
                 <ul class="phone-mail">
-                    <li>
+                    <li class="phone-mail-item">
                         <a class="mail-address link" href="mailto:info@devstudio.com"><svg class="envelope" width=16
                                 height=12>
                                 <use href="./images/sprite/icons.svg#icon-envelope"></use>
                             </svg> info@devstudio.com</a>
                     </li>
-                    <li>
+                    <li class="phone-mail-item">
                         <a class="phone-number link" href="tel:+48111111111"><svg class="smartphone" width=16 height=12>
                                 <use href="./images/sprite/icons.svg#icon-smartphone"></use>
                             </svg> +48 111 111 111</a>
@@ -113,7 +113,7 @@
             <div class=" container">
                 <h2 class="second-header">Nasz zespół</h2>
                 <ul class="team-list">
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/team/img4.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
                         <h3 class="third-header-team">John Doe</h3>
                         <p class="description-team">Product Designer</p>
@@ -140,7 +140,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/team/img5.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
                         <h3 class="third-header-team">John Doe</h3>
                         <p class="description-team">Frontend Developer</p>
@@ -167,7 +167,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/team/img6.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
                         <h3 class="third-header-team">John Doe</h3>
                         <p class="description-team">Marketing</p>
@@ -194,7 +194,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/team/img7.jpg" alt="Zdjęcie portretowe pracownika" height="260" width="270">
                         <h3 class="third-header-team">John Doe</h3>
                         <p class="description-team">UI Designer</p>
@@ -268,10 +268,10 @@
                 <a class="logo-link link footer-theme" href="index.html"><span class="logo-link-web">Web</span>Studio</a>
                 <address>
                     <ul class="address-list">
-                        <li><a class="address-link link footer-theme" href="#">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                        <li><a class="address-link link footer-themes"
+                        <li class="address-list-item"><a class="address-link link footer-theme" href="#">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                        <li class="address-list-item"><a class="address-link link footer-themes"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="address-link link footer-themes" href="tel:+48111111111">+48 111 111 111</a></li>
+                        <li class="address-list-item"><a class="address-link link footer-themes" href="tel:+48111111111">+48 111 111 111</a></li>
                     </ul>
                 </address>
             </div>
@@ -302,9 +302,9 @@
             </div>
             <div class="right-side">
                 <h3 class="footer-header">Zapisz się do newslettera</h3>
-                <form name="sign-up-newsletter" autocomplete="off" method="POST">
-                    <label>
-                        <input class="newsletter-email" type="email" name="email" placeholder="E-mail">
+                <form class="sign-up-newsletter" name="sign-up-newsletter" autocomplete="off" method="POST">
+                    <label class="sign-up-newsletter">
+                        <input class="newsletter-email" type="email" name="email" placeholder="E-mail" required>
                         <button class="button-order-service newsletter-button" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
                             <use href="./images/sprite/icons.svg#icon-send"></use>
                         </svg></button>
