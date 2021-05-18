@@ -300,9 +300,9 @@
                 </li>
                 </ul>
             </div>
-            <div class="right-side">
+            <div class="footer__newsletter">
                 <h3 class="footer__header">Zapisz się do newslettera</h3>
-                <form class="footer__newsletter" name="sign-up-newsletter" autocomplete="off" method="POST">
+                <form class="footer__form" name="sign-up-newsletter" autocomplete="off" method="POST">
                     <label class="footer__sign-up">
                         <input class="footer__input" type="email" name="email" placeholder="E-mail" required>
                         <button class="button-order-service footer__button" type="submit">Zapisz się<svg class="icon-send" width="24" height="24">
@@ -316,43 +316,43 @@
 
     <div class="is-hidden backdrop" data-modal>
         <div class="modal">
-            <button class="cls-button" type="button" data-modal-close>
-                <svg class="cls-icon" width="17" height="17">
+            <button class="modal__cls-button" type="button" data-modal-close>
+                <svg class="modal__cls-icon" width="17" height="17">
                     <use href="./images/sprite/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h3 class="modal-header-form">Zostaw swoje dane w formularzu poniżej</h3>
-            <form name="contact-data-form" method="POST" autocomplete="off">
-                <label class="contact-data-form-label">
+            <h3 class="modal__header">Zostaw swoje dane w formularzu poniżej</h3>
+            <form name="modal__form" method="POST" autocomplete="off">
+                <label class="modal__label">
                     Imie
-                        <input class="input" pattern="\b[A-Z]\w+\s[A-Z]\w+\b" name="name" placeholder=" " required>
+                        <input class="modal__input" pattern="\b[A-Z]\w+\s[A-Z]\w+\b" name="name" placeholder=" " required>
                         <svg class="icon-name" width="12" height="12">
                             <use href="./images/sprite/icons.svg#icon-name"></use>
                         </svg>
                 </label>
-                <label class="contact-data-form-label">
+                <label class="modal__label">
                     Telefon
-                    <input class="input" type="tel" name="tel" minlength="9" maxlength="12" placeholder=" " required>
+                    <input class="modal__input" type="tel" name="tel" minlength="9" maxlength="12" placeholder=" " required>
                     <svg class="icon-tel" width="13" height="13">
                         <use href="./images/sprite/icons.svg#icon-tel"></use>
                     </svg>
                 </label>
-                <label class="contact-data-form-label">
+                <label class="modal__label">
                     Email
-                    <input class="input" type="email" name="email" placeholder=" " required>
+                    <input class="modal__input" type="email" name="email" placeholder=" " required>
                     <svg class="icon-mail" width="15" height="12">
                         <use href="./images/sprite/icons.svg#icon-mail"></use>
                     </svg>
                 </label>
-                <label class="contact-data-form-label">
+                <label class="modal__label">
                     Komentarz
-                    <textarea class="textarea" name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
+                    <textarea class="modal__textarea" name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
                 </label>
-                <label class="in-row contact-data-form-label">
-                    <input class="input-checkbox" type="checkbox" name="checkbox" required>
-                    <p class="disclaimer">Oświadczam iż akceptuję<a class="policy" href="#">Regulamin</a>i<a class="policy" href="#">Politykę Prywatności.</a></p>
+                <label class="modal__label modal__label--in-row">
+                    <input class="modal__input-checkbox" type="checkbox" name="checkbox" required>
+                    <p class="modal__disclaimer">Oświadczam iż akceptuję<a class="modal__policy" href="#">Regulamin</a>i<a class="modal__policy" href="#">Politykę Prywatności.</a></p>
                 </label>
-                <button class="button-order-service modal-button" type="submit">Wyślij</button>
+                <button class="button-order-service modal__button" type="submit">Wyślij</button>
             </form>
         </div>
     </div>
