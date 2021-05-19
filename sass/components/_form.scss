@@ -44,10 +44,10 @@
   box-shadow: none;
 }
 .modal__input:valid {
-  border-color: rgba(70, 255, 70);
+  border-color: rgb(70, 255, 70);
 }
 .modal__input:invalid:not(:placeholder-shown) {
-  border-color: rgba(255, 70, 70);
+  border-color: rgb(255, 70, 70);
 }
 .modal__input:focus + .icon-name {
   fill: var(--secondary-color);
