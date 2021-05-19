@@ -1,0 +1,22 @@
+@import "./utils/is-hidden";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+@import "./base/composition";
+@import "./base/logo-web";
+
+@import "./components/logo";
+@import "./components/header";
+@import "./components/second-header";
+@import "./components/solutions";
+@import "./components/main-button";
+@import "./components/work";
+@import "./components/team";
+@import "./components/social-icons";
+@import "./components/clients";
+@import "./components/footer";
+
+@import "./components/backdrop";
+
+@import "./pages/portfolio";
