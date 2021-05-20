@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css" integrity="sha512-oxqL25oMBPTFLK5OOR4U/Y//5oyc+3B8MJVTuGD2FLdyA+VXlhKMyQ7YjHNSI5+CLk0UdMLw1lV64dDuT1Batw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>WebStudio-portfolio</title>
 </head>
 
@@ -18,10 +18,10 @@
                 <a class="header__logo link" href="index.html"><span class="logo-web">Web</span>Studio</a>
                 <ul class="header__sites">
                     <li class="header__page">
-                        <a class="header__agency header__agency--accent link" href="index.html">Agencja</a>
+                        <a class="header__agency header__agency--portfolio-style link" href="index.html">Agencja</a>
                     </li>
                     <li class="header__page">
-                        <a class="header__portfolio header__portfolio--accent link" href="portfolio.html">Portfolio</a>
+                        <a class="header__portfolio header__portfolio--portfolio-style link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="header__page">
                         <a class="header__contact link" href="#">Kontakt</a>
@@ -223,7 +223,8 @@
     <footer class="footer">
         <div class="footer__composition container">
             <div class="footer__address">
-                <a class="footer__logo link" href="index.html"><span class="logo-web">Web</span>Studio</a>
+                <a class="header__logo header__logo--dark-theme link" href="index.html"><span
+                        class="logo-web">Web</span>Studio</a>
                 <address>
                     <ul class="footer__list">
                         <li class="footer__item"><a class="firm-address link" href="#">m. Warszawa, Aleje Jerozolimskie
@@ -264,9 +265,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="right-side">
+            <div class="footer__newsletter">
                 <h3 class="footer__header">Zapisz się do newslettera</h3>
-                <form class="footer__newsletter" name="sign-up-newsletter" autocomplete="off" method="POST">
+                <form class="footer__form" name="sign-up-newsletter" autocomplete="off" method="POST">
                     <label class="footer__sign-up">
                         <input class="footer__input" type="email" name="email" placeholder="E-mail" required>
                         <button class="button-order-service footer__button" type="submit">Zapisz się<svg class="icon-send"

@@ -17,16 +17,11 @@
   margin: auto;
   color: #ffffff;
   background-color: var(--secondary-color);
-}
-.button-order-service:active {
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-.button-order-service:hover {
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-.button-order-service:focus {
-  background-color: var(--secondary-color);
-  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
 }
