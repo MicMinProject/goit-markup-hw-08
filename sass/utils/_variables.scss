@@ -1,6 +1,16 @@
-$font-main: "Roboto", sans-serif;
+$fonts:(
+    'main': ("Roboto", sans-serif)
+);
 $colors:(
     'font': #757575,
     'main': #fff,
     'secondary': #2196f3
-)
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}

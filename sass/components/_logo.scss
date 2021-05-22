@@ -13,6 +13,6 @@
   }
 }
 .logo-web {
-  color: var(--secondary-color);
-  fill: var(--secondary-color);
+  color: getColor('secondary');
+  fill: getColor('secondary');
 }

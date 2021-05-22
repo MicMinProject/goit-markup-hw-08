@@ -1,13 +1,7 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --main-color-font: #757575;
-  --main-color: #fff;
-  --secondary-color: #2196f3;
-}
 .body {
-  font-family: var(--main-font);
-  color: var(--main-color-font);
-  background-color: var(--main-color);
+  font-family: getFont('main');
+  color: getColor('font');
+  background-color: getColor('main');
   width: 1600px;
 }
 .image {

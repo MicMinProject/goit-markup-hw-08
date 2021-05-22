@@ -5,19 +5,16 @@
   &::after {
     visibility: hidden;
   }
-  &:hover {
-    color: var(--secondary-color);
-    fill: var(--secondary-color);
-  }
+  &:hover,
   &:focus {
-    color: var(--secondary-color);
-    fill: var(--secondary-color);
+    color: getColor('secondary');
+    fill: getColor('secondary');
   }
 }
 .header__portfolio--portfolio-style {
   margin-right: 64px;
-  color: var(--secondary-color);
-  fill: var(--secondary-color);
+  color: getColor('secondary');
+  fill: getColor('secondary');
 
   &::after {
     content: "";
@@ -26,6 +23,6 @@
     left: 0;
     width: 62px;
     height: 4px;
-    background-color: var(--secondary-color);
+    background-color: getColor('secondary');
   }
 }
