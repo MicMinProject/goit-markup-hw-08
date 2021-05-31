@@ -2,7 +2,7 @@
   font-family: getFont('main');
   color: getColor('font');
   background-color: getColor('main');
-  width: 100%;
+  min-width: 320px;
 }
 .image {
   display: block;

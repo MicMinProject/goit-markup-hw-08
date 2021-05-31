@@ -21,7 +21,6 @@
         text-transform: uppercase;
         max-width: 365px;
         height: 86px;
-        // flex-wrap: wrap;
         text-align: center;
         margin: 0 0 30px;
         color: getColor('main');
@@ -45,7 +44,7 @@
         margin-bottom: 30px;
         background-color: #f5f4fa;
         border-radius: 4px;
-        max-width: 450px;
+        width:100%;
         height: 120px;
   }
   &__header {
@@ -58,7 +57,8 @@
         text-transform: uppercase;
         height: 16px;
         margin-top: 0;
-        margin-bottom: 10px;  
+        margin-bottom: 10px;
+        color:  #212121;
   }
   &__description {
         max-width: 450px;
@@ -70,64 +70,94 @@
   }
 }
 
-// .solutions {
-//   &__main-header {
-//     background-color: #2f303a;
-//     background-image: linear-gradient(
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/background/header-1200.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     padding: 200px 0;
-//   }
-//   &__title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.364;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     max-width: 696px;
-//     height: 120px;
-//     flex-wrap: wrap;
-//     text-align: center;
-//     margin: 0 0 30px;
-//     color: getColor('main');
-//   }
-//   &__services {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0;
-//     margin: 0;
-//   }
-//   &__services-icons {
-//     padding: 20px 100px;
-//     margin-bottom: 30px;
-//     background-color: #f5f4fa;
-//     border-radius: 4px;
-//     width: 270px;
-//     height: 120px;
-//   }
-//   &__header {
-//     width: 270px;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.143;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     height: 16px;
-//     margin-top: 0;
-//     margin-bottom: 10px;
-//   }
-//   &__description {
-//     width: 270px;
-//     font-size: 14px;
-//     line-height: 1.714;
-//     letter-spacing: 0.03em;
-//     margin: 0;
-//   }
-// }
+@media screen and (min-width: 320px) , (max-width: 479) {
+      .solutions {
+            &__title {  
+                  height: auto; 
+            }
+
+      }
+}
+
+@media screen and (min-width: 768px) {
+      .solutions {
+            &__main-header {
+                  background-image: linear-gradient(
+                      rgba(47, 48, 58, 0.4),
+                      rgba(47, 48, 58, 0.4)
+                    ),
+                    url(../images/background/header-768.jpg);
+            }
+            &__services {
+                  justify-content: center;
+                  flex-direction: row;
+                  flex-basis: calc(100% / 2 - 30px);
+                  margin-left: -30px;
+            }
+            &__item {
+                  margin-left: 30px;
+                  align-items: start;
+            }
+            &__header,
+            &__description {
+                  max-width: 354px;
+            }
+      }
+}
+
+@media screen and (min-width: 1200px) {
+.solutions {
+  &__main-header {
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/header-1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+    height: 120px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 0 30px;
+    color: getColor('main');
+  }
+  &__services {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  &__services-icons {
+    padding: 20px 100px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+  }
+  &__item {
+        margin: 0;
+  }
+  &__header {
+    text-align: left;
+    width: 270px;
+  }
+    
+  &__description {
+    width: 270px;
+  }
+}
+}
