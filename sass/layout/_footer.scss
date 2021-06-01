@@ -5,13 +5,18 @@
 
   &__composition {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
   }
   &__address {
-    margin-right: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
     margin: 0;
     padding-bottom: 60px;
@@ -43,19 +48,23 @@
     color: rgba(255, 255, 255, 0.6);
     width: 231px;
   }
+  &__newsletter {
+    width: 100%;
+  }
   &__header {
     margin: 0;
     padding-bottom: 20px;
-    padding-top: 12px;
+    padding-top: 0;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: getColor("main");
   }
   &__social-list {
-    padding: 0 32px 30px;
+    padding: 0 0px 60px;
     justify-content: space-between;
     display: flex;
     padding-left: 0;
@@ -63,9 +72,11 @@
   }
   &__sign-up {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -73,7 +84,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     padding-left: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
   }
@@ -86,3 +97,93 @@
 .icon-send {
   fill: getColor("main");
 }
+
+
+// .footer {
+//   padding-top: 60px;
+//   justify-content: flex-start;
+//   background-color: #2f303a;
+
+//   &__composition {
+//     display: flex;
+//     justify-content: flex-start;
+//   }
+//   &__address {
+//     margin-right: 38px;
+//   }
+//   &__list {
+//     display: block;
+//     padding-top: 20px;
+//     margin: 0;
+//     padding-bottom: 60px;
+//     padding-left: 0;
+//   }
+//   &__item:not(:first-child) {
+//     padding-top: 9px;
+//   }
+//   &__firm-address {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.174;
+//     letter-spacing: 0.03em;
+//     color: getColor("main");
+//   }
+//   &__mail {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.174;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//     width: 231px;
+//   }
+//   &__phone {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.174;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//     width: 231px;
+//   }
+//   &__header {
+//     margin: 0;
+//     padding-bottom: 20px;
+//     padding-top: 12px;
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: getColor("main");
+//   }
+//   &__social-list {
+//     padding: 0 32px 30px;
+//     justify-content: space-between;
+//     display: flex;
+//     padding-left: 0;
+//     margin: 0;
+//   }
+//   &__sign-up {
+//     display: flex;
+//   }
+//   &__input {
+//     width: 358px;
+//     height: 50px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: 4px;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     padding-left: 16px;
+//     margin-right: 12px;
+//     color: rgba(255, 255, 255, 0.6);
+//     background-color: transparent;
+//   }
+//   &__button {
+//     padding-left: 42px;
+//     padding-right: 28px;
+//     justify-content: space-between;
+//   }
+// }
+// .icon-send {
+//   fill: getColor("main");
+// }
