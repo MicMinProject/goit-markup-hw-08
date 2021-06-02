@@ -69,6 +69,18 @@
         margin-bottom: 30px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+            .solutions__main-header {
+                  background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                      ),
+                      url(../images/background/header-480@2x.jpg);
+            }
+      }
 
 @media screen and (min-width: 320px) , (max-width: 479) {
       .solutions {
@@ -101,6 +113,18 @@
             &__header,
             &__description {
                   max-width: 354px;
+            }
+      }
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+            .solutions__main-header {
+                  background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                      ),
+                      url(../images/background/header-768@2x.jpg);
             }
       }
 }
@@ -160,4 +184,16 @@
     width: 270px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+            .solutions__main-header {
+                  background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                      ),
+                      url(../images/background/header-1200@2x.jpg);
+            }
+      }
 }
