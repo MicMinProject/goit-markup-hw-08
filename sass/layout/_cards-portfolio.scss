@@ -60,6 +60,8 @@
   &__image {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
   }
   &__subtitles {
     min-height: 110px;
@@ -122,6 +124,11 @@
       flex-basis: calc(100% / 2 - 30);
       margin-left: -30px;
     }
+    &__image {
+      height: 100%;
+      width: auto;
+      margin-left: calc((450px - 354px) / -2);
+    }
     &__card {
       height: 440px;
       width: 354px;
@@ -134,16 +141,31 @@
     &__view {
       width: 354px;
       height: 788px;
-      
-      &:hover {
-        top: -294px;
-      }
     }
     &__animation {
       width: 354px;
       height: 294px;
       top: 294px;
     }
+  }
+}
+@media screen and (min-width:1200px) {
+  .portfolio {
+    &__image-list {
+      flex-basis: calc(100% / 3 - 30);
+    }
+    &__image {
+      margin-left: calc((450px - 370px) / -2);
+    }
+    &__card {
+      width: 370px;
+      height: 404px;
+    }
+    &__hide,
+    &__view,
+    &__animation {
+      width: 370px;
+      
   }
 }
 
