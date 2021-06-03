@@ -226,6 +226,12 @@ ul {
   padding-bottom: 0;
 }
 
+.modal--full-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
 .modal__cls-button {
   width: 30px;
   height: 30px;
@@ -243,8 +249,18 @@ ul {
   cursor: pointer;
 }
 
+.modal__cls-button--no-border {
+  border: none;
+}
+
 .modal__cls-icon {
   border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal--full-screen {
+    display: none;
+  }
 }
 
 .modal__header {
@@ -419,6 +435,22 @@ ul {
   margin-right: auto;
 }
 
+.header__menu {
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  height: 16px;
+  margin-top: 22px;
+  fill: #212121;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__menu:active {
+  fill: #2196f3;
+  transform: rotate(90deg);
+}
+
 .header__sites {
   align-items: center;
   padding: 0;
@@ -546,6 +578,9 @@ ul {
   }
   .header__composition {
     height: 80px;
+  }
+  .header__menu {
+    display: none;
   }
   .header__sites {
     display: flex;
@@ -1170,7 +1205,6 @@ ul {
 .portfolio__card {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #eeeeee;
-  height: 404px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
@@ -1204,7 +1238,7 @@ ul {
 }
 
 .portfolio__animation {
-  padding: 49px 45px 49px 24px;
+  padding: 77px 45px 49px 24px;
   width: 100%;
   height: 294px;
   position: absolute;
@@ -1218,7 +1252,7 @@ ul {
   letter-spacing: 0.03em;
   color: #fff;
   margin: 0;
-  width: 100%;
+  width: 406px;
 }
 
 .portfolio__image {
@@ -1234,7 +1268,7 @@ ul {
 }
 
 .portfolio__header {
-  min-width: 320px;
+  width: 320px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1309,6 +1343,15 @@ ul {
   .portfolio__hide, .portfolio__view, .portfolio__animation {
     width: 354px;
   }
+  .portfolio__animation {
+    padding-top: 49px;
+  }
+  .portfolio__description {
+    width: 306px;
+  }
+  .portfolio__header {
+    width: 306px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1320,6 +1363,9 @@ ul {
   }
   .portfolio__card, .portfolio__hide, .portfolio__view, .portfolio__animation {
     width: 370px;
+  }
+  .portfolio__header {
+    width: 320px;
   }
 }
 /*# sourceMappingURL=main.css.map */
