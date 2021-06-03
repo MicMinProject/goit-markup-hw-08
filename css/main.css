@@ -1247,9 +1247,6 @@ ul {
     width: 354px;
     height: 788px;
   }
-  .portfolio__view:hover {
-    top: -294px;
-  }
   .portfolio__animation {
     width: 354px;
     height: 294px;
@@ -1258,30 +1255,18 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
+  .portfolio__image-list {
+    flex-basis: calc(100% / 3 - 30);
+  }
   .portfolio__image {
-    height: 100%;
-    width: auto;
     margin-left: calc((450px - 370px) / -2);
   }
   .portfolio__card {
     width: 370px;
     height: 404px;
   }
-  .portfolio__hide {
+  .portfolio__hide, .portfolio__view, .portfolio__animation {
     width: 370px;
-    height: 294px;
-  }
-  .portfolio__view {
-    width: 370px;
-    height: 788px;
-  }
-  .portfolio__view:hover {
-    top: -294px;
-  }
-  .portfolio__animation {
-    width: 370px;
-    height: 294px;
-    top: 294px;
   }
 }
 /*# sourceMappingURL=main.css.map */
