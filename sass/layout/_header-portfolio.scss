@@ -1,5 +1,4 @@
 .header__agency--portfolio-style {
-  margin-right: 46px;
   color: #212121;
 
   &::after {
@@ -12,7 +11,6 @@
   }
 }
 .header__portfolio--portfolio-style {
-  margin-right: 64px;
   color: getColor('secondary');
   fill: getColor('secondary');
 

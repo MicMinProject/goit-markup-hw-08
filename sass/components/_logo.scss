@@ -1,12 +1,13 @@
 .header__logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.667;
   letter-spacing: 0.03em;
-  padding: 24px 0 25px;
-  margin-right: 93px;
+  align-items: center;
+  margin-right: auto;
   color: #212121;
+  display: flex;
   
   &--dark-theme {
   color: #fff;
@@ -18,3 +19,35 @@
   color: getColor('secondary');
   fill: getColor('secondary');
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 83px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+// .header__logo {
+//   font-family: Raleway;
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.192;
+//   letter-spacing: 0.03em;
+//   padding: 24px 0 25px;
+//   margin-right: 93px;
+//   color: #212121;
+  
+//   &--dark-theme {
+//   color: #fff;
+//   margin: 0;
+//   padding: 0;
+//   }
+// }
+// .logo-web {
+//   color: getColor('secondary');
+//   fill: getColor('secondary');
+// }

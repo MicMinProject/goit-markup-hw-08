@@ -90,6 +90,9 @@
 }
 @media screen and (max-width: 479px) {
   .portfolio{
+    &__image-list {
+      justify-content: center;
+    }
     &__hide {
       height: 258px;
     }
@@ -103,6 +106,10 @@
     }
     &__subtitles {
       height: 146px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     &__header {
       width: 100%;
@@ -110,6 +117,7 @@
       margin-left: 0;
       letter-spacing: 0.05em;
       text-align: center;
+      margin-right: 0;
     }
     &__services {
       padding-left: 0;
@@ -130,22 +138,13 @@
       margin-left: calc((450px - 354px) / -2);
     }
     &__card {
-      height: 440px;
       width: 354px;
       margin-left: 30px;
     }
-    &__hide {
-      width: 354px;
-      height: 294px;
-    }
-    &__view {
-      width: 354px;
-      height: 788px;
-    }
+    &__hide,
+    &__view,
     &__animation {
       width: 354px;
-      height: 294px;
-      top: 294px;
     }
   }
 }
@@ -157,10 +156,7 @@
     &__image {
       margin-left: calc((450px - 370px) / -2);
     }
-    &__card {
-      width: 370px;
-      height: 404px;
-    }
+    &__card,
     &__hide,
     &__view,
     &__animation {

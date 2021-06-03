@@ -87,19 +87,16 @@ ul {
   }
 }
 
-.composition {
-  display: flex;
-}
-
 .header__logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.667;
   letter-spacing: 0.03em;
-  padding: 24px 0 25px;
-  margin-right: 93px;
+  align-items: center;
+  margin-right: auto;
   color: #212121;
+  display: flex;
 }
 
 .header__logo--dark-theme {
@@ -111,6 +108,20 @@ ul {
 .logo-web {
   color: #2196f3;
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .second-header {
@@ -393,32 +404,38 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
   background-color: #fff;
 }
 
-.header__navigation {
-  min-width: auto;
+.header__composition {
   display: flex;
+  height: 60px;
+}
+
+.header__navigation {
+  width: 100%;
+  display: flex;
+  margin-right: auto;
 }
 
 .header__sites {
-  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
   margin-right: auto;
-  display: flex;
+  display: none;
 }
 
 .header__page {
   position: relative;
   height: 80px;
-  padding: 34px 0;
+  align-items: center;
+  padding-top: 32px;
 }
 
 .header__agency {
-  margin-right: 46px;
+  margin-right: 60px;
   text-align: center;
   color: #2196f3;
   fill: #2196f3;
@@ -435,7 +452,7 @@ ul {
 }
 
 .header__portfolio {
-  margin-right: 64px;
+  margin-right: 60px;
   text-align: center;
   color: #212121;
 }
@@ -455,23 +472,30 @@ ul {
   fill: #2196f3;
 }
 
-.header__phone-mail {
-  display: flex;
-  margin: 0;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: auto;
+.header__comunicators {
+  display: none;
 }
 
-.header__phone-mail-item {
+.header__comunicators-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-content: flex-end;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: -5px;
+  padding-left: 40px;
+}
+
+.header__item {
   height: 16px;
+  margin-top: 10px;
 }
 
 .header__mail {
   display: flex;
   height: 16px;
   margin: 0;
-  margin-right: 40px;
   margin-left: auto;
   padding: 0;
   font-weight: 500;
@@ -495,8 +519,8 @@ ul {
 
 .header__phone {
   display: flex;
-  text-align: center;
-  padding: 0 27px 0 0;
+  padding: 0;
+  text-align: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -514,6 +538,44 @@ ul {
   height: 16px;
   margin-top: 0px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header__composition {
+    height: 80px;
+  }
+  .header__sites {
+    display: flex;
+  }
+  .header__comunicators {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__agency, .header__portfolio {
+    margin-right: 46px;
+  }
+  .header__comunicators-list {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+  .header__item {
+    height: 16px;
+    min-width: 170px;
+  }
+  .header__mail, .header__phone {
+    padding-right: 0;
+    margin-right: 0;
+    justify-content: flex-end;
+  }
 }
 
 .solutions__main-header {
@@ -1004,7 +1066,6 @@ ul {
 }
 
 .header__agency--portfolio-style {
-  margin-right: 46px;
   color: #212121;
 }
 
@@ -1018,7 +1079,6 @@ ul {
 }
 
 .header__portfolio--portfolio-style {
-  margin-right: 64px;
   color: #2196f3;
   fill: #2196f3;
 }
@@ -1196,6 +1256,9 @@ ul {
 }
 
 @media screen and (max-width: 479px) {
+  .portfolio__image-list {
+    justify-content: center;
+  }
   .portfolio__hide {
     height: 258px;
   }
@@ -1209,6 +1272,10 @@ ul {
   }
   .portfolio__subtitles {
     height: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .portfolio__header {
     width: 100%;
@@ -1216,6 +1283,7 @@ ul {
     margin-left: 0;
     letter-spacing: 0.05em;
     text-align: center;
+    margin-right: 0;
   }
   .portfolio__services {
     padding-left: 0;
@@ -1235,22 +1303,11 @@ ul {
     margin-left: calc((450px - 354px) / -2);
   }
   .portfolio__card {
-    height: 440px;
     width: 354px;
     margin-left: 30px;
   }
-  .portfolio__hide {
+  .portfolio__hide, .portfolio__view, .portfolio__animation {
     width: 354px;
-    height: 294px;
-  }
-  .portfolio__view {
-    width: 354px;
-    height: 788px;
-  }
-  .portfolio__animation {
-    width: 354px;
-    height: 294px;
-    top: 294px;
   }
 }
 
@@ -1261,11 +1318,7 @@ ul {
   .portfolio__image {
     margin-left: calc((450px - 370px) / -2);
   }
-  .portfolio__card {
-    width: 370px;
-    height: 404px;
-  }
-  .portfolio__hide, .portfolio__view, .portfolio__animation {
+  .portfolio__card, .portfolio__hide, .portfolio__view, .portfolio__animation {
     width: 370px;
   }
 }

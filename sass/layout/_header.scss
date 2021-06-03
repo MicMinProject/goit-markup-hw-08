@@ -1,28 +1,31 @@
 .header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
   background-color: getColor('main');
-
-  &__navigation {
-    min-width: auto;
+  &__composition {
     display: flex;
+    height: 60px;
+  }
+  &__navigation {
+    width: 100%;
+    display: flex;
+    margin-right: auto;
   }
   &__sites {
-    flex-wrap: wrap;
     align-items: center;
     padding: 0;
     margin: 0;
     margin-right: auto;
-    
-    display: flex;
+    display: none;
   }
   &__page {
     position: relative;
     height: 80px;
-    padding: 34px 0;
+    align-items: center;
+    padding-top: 32px;
   }
   &__agency {
-    margin-right: 46px;
+    margin-right: 60px;
     text-align: center;
     color: getColor('secondary');
     fill: getColor('secondary');
@@ -38,7 +41,8 @@
     }
   }
   &__portfolio {
-    margin-right: 64px;
+    margin-right: 60px;
+    
     text-align: center;
     color: #212121;
   
@@ -58,21 +62,27 @@
       fill: getColor('secondary');
     }
   }
-  &__phone-mail {
-    display: flex;
-    margin: 0;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: auto;
+  &__comunicators {
+    display: none;
   }
-  &__phone-mail-item {
+  &__comunicators-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-content: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: -5px;
+    padding-left: 40px;
+  }
+  &__item {
     height: 16px;
+    margin-top: 10px;
   }
   &__mail {
     display: flex;
     height: 16px;
     margin: 0;
-    margin-right: 40px;
     margin-left: auto;
     padding: 0;
     font-weight: 500;
@@ -95,8 +105,8 @@
   }
   &__phone {
     display: flex;
-    text-align: center;
-    padding: 0 27px 0 0;
+    padding: 0;
+    text-align: left;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -116,3 +126,164 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__composition {
+      height: 80px;
+    }
+    height: 80px;
+    &__sites {
+      display: flex;
+    }
+    &__comunicators {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header{
+    &__agency,
+    &__portfolio {
+      margin-right: 46px;
+    }
+    &__comunicators-list {
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: auto;
+    }
+    &__item {
+      height: 16px;
+      min-width: 170px;
+    }
+    &__mail,
+    &__phone {
+      padding-right: 0;
+      margin-right: 0;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// .header {
+//   border-bottom: 1px solid #ececec;
+//   height: 80px;
+//   background-color: getColor('main');
+
+//   &__navigation {
+//     min-width: auto;
+//     display: flex;
+//   }
+//   &__sites {
+//     flex-wrap: wrap;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0;
+//     margin-right: auto;
+    
+//     display: flex;
+//   }
+//   &__page {
+//     position: relative;
+//     height: 80px;
+//     padding: 34px 0;
+//   }
+//   &__agency {
+//     margin-right: 46px;
+//     text-align: center;
+//     color: getColor('secondary');
+//     fill: getColor('secondary');
+  
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       width: 58px;
+//       height: 4px;
+//       background-color: getColor('secondary');
+//     }
+//   }
+//   &__portfolio {
+//     margin-right: 64px;
+//     text-align: center;
+//     color: #212121;
+  
+//     &:hover,
+//     &:focus {
+//       color: getColor('secondary');
+//       fill: getColor('secondary');
+//     }
+//   }
+//   &__contact {
+//     text-align: center;
+//     color: #212121;
+  
+//     &:hover,
+//     &:focus {
+//       color: getColor('secondary');
+//       fill: getColor('secondary');
+//     }
+//   }
+//   &__comunicators-list {
+//     display: flex;
+//     margin: 0;
+//     align-items: center;
+//     justify-content: flex-end;
+//     margin-left: auto;
+//   }
+//   &__comunicators-list-item {
+//     height: 16px;
+//   }
+//   &__mail {
+//     display: flex;
+//     height: 16px;
+//     margin: 0;
+//     margin-right: 40px;
+//     margin-left: auto;
+//     padding: 0;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.02em;
+//     color: getColor('font');
+//     fill: getColor('font');
+  
+//     &:hover,
+//     &:focus {
+//       color: getColor('secondary');
+//       fill: getColor('secondary');
+//     }
+//   }
+//   &__envelope {
+//     height: 16px;
+//     margin-top: 0px;
+//     margin-right: 10px;
+//   }
+//   &__phone {
+//     display: flex;
+//     text-align: center;
+//     padding: 0 27px 0 0;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.02em;
+//     color: getColor('font');
+//     fill: getColor('font');
+  
+//     &:hover,
+//     &:focus {
+//       color: getColor('secondary');
+//       fill: getColor('secondary');
+//     }
+//   }
+//   &__smartphone {
+//     height: 16px;
+//     margin-top: 0px;
+//     margin-right: 10px;
+//   }
+// }
