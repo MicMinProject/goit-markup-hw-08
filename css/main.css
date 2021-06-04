@@ -594,6 +594,10 @@ ul {
   color: #2196f3;
 }
 
+.header__agency--blue-word {
+  color: #2196f3;
+}
+
 .header__portfolio {
   margin-right: 60px;
   text-align: center;
@@ -612,6 +616,10 @@ ul {
 }
 
 .header__portfolio--menu-style:active {
+  color: #2196f3;
+}
+
+.header__portfolio--blue-word {
   color: #2196f3;
 }
 

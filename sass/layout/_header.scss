@@ -74,6 +74,9 @@
         color: getColor('secondary');
       }
     }
+    &--blue-word {
+      color: getColor('secondary');
+    }
   }
   &__portfolio {
     margin-right: 60px;
@@ -93,6 +96,9 @@
       &:active {
         color: getColor('secondary');
       }
+    }
+    &--blue-word {
+      color: getColor('secondary');
     }
   }
   &__contact {
