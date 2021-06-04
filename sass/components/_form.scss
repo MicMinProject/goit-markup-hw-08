@@ -67,6 +67,7 @@
     height: 15px;
     margin: 0;
     margin-right: 7px;
+    opacity: 0;
     
       &:checked {
         visibility: hidden;
@@ -99,7 +100,6 @@
   &__disclaimer {
     position: relative;
     margin: 0;
-  
     &::before {
       content: "";
       width: 16px;
@@ -140,4 +140,32 @@
   left: 2.8%;
   position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1200px) {
+  .modal{
+    &__label{
+      width: 100%;
+    }
+    &__input {
+      width: 100%;
+    }
+    &__disclaimer {
+      font-size: 12px;
+      line-height: 1.667;
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100vw;
+    &__label {
+      width: 100%;
+      &--in-row {
+        height: 48px;
+      }
+    }
+    &__input {
+      width: 100%;
+    }
+  }
 }

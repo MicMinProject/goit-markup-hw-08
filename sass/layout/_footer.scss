@@ -21,9 +21,17 @@
     margin: 0;
     padding-bottom: 60px;
     padding-left: 0;
+    margin-top: -9px;
+    &--menu-style {
+      padding-bottom: 64px;
+      display: block;
+    }
   }
-  &__item:not(:first-child) {
-    padding-top: 9px;
+  &__item {
+    margin-top: 9px;
+    &--menu-style {
+      padding-top: 23px;
+    }
   }
   &__firm-address {
     font-style: normal;
@@ -39,6 +47,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     width: 231px;
+    &--menu-style {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+      color: getColor('font');
+    }
   }
   &__phone {
     font-style: normal;
@@ -47,6 +62,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     width: 231px;
+    &--menu-style {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.176;
+      letter-spacing: 0.02em;
+      color: getColor('secondary')
+    }
   }
   &__newsletter {
     width: 100%;

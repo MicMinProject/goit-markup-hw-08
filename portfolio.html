@@ -17,6 +17,7 @@
         <div class="container header__composition">
             <nav class="header__navigation">
                 <a class="header__logo link" href="index.html"><span class="logo-web">Web</span>Studio</a>
+                <button type="button" class="header__menu link" data-menu-open><svg class="icon-menu" width="24" height="16"><use href="./images/sprite/icons.svg#icon-menu"></use></svg></button>
                 <ul class="header__sites">
                     <li class="header__page">
                         <a class="header__agency header__agency--portfolio-style link" href="index.html">Agencja</a>
@@ -286,5 +287,51 @@
         </div>
     </footer>
     <!-- END FOOTER -->
+
+    <!-- MENU -->
+    <div class="modal modal--full-screen is-hidden" data-menu>
+        <button class="modal__cls-button modal__cls-button--no-border link" type="button" data-menu-close>
+            <svg class="modal__cls-icon" width="17" height="17">
+                <use href="./images/sprite/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="modal__navigation-comunication">
+            <ul class="header__sites header__sites--menu-style">
+                <li class="header__page header__page--menu-style">
+                    <a class="header__agency header__agency--menu-style link" href="index.html">Agencja</a>
+                </li>
+                <li class="header__page header__page--menu-style">
+                    <a class="header__portfolio header__portfolio--menu-style link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__page header__page--menu-style">
+                    <a class="header__contact header__contact--menu-style link" href="#">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="footer__list footer__list--menu-style">
+                <li class="footer__item"><a class="footer__phone footer__phone--menu-style link" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li class="footer__item footer__item--menu-style"><a class="footer__mail footer__mail--menu-style link"href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </div>
+        <ul class="modal__social-list">
+            <li class="modal__social-item">
+                <a class="modal__social-link link" href="#">Instagram</a>
+            </li>
+            <li class="modal__social-item">
+                <a class="modal__social-link link" href="#">Twitter</a>
+            </li>
+            <li class="modal__social-item">
+                <a class="modal__social-link link" href="#">Facebook</a>
+            </li>
+            <li class="modal__social-item">
+                <a class="modal__social-link modal__social-link--no-border link" href="#">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    <!-- END MENU -->
+
+    <!-- SCRIPTS -->
+    <script src="./js/mobile-menu.js"></script>
+
+    <!-- END SCRIPTS -->
 </body>
 </html>
