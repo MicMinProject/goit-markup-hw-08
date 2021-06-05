@@ -1459,7 +1459,7 @@ ul {
     justify-content: center;
   }
   .portfolio__hide {
-    height: 258px;
+    max-height: 294px;
   }
   .portfolio__animation {
     padding-top: 10px;
